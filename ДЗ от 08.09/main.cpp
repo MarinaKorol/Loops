@@ -1,4 +1,4 @@
-#include <iostream>
+ï»¿#include <iostream>
 using namespace std;
 //#define FACTORIAL
 //#define STEPEN 
@@ -12,7 +12,7 @@ void main()
 #ifdef FACTORIAL
 int n;
 double f = 1;
-	cout << "Ââåäèòå ÷èñëî";cin >> n;
+	cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ñ‡Ð¸ÑÐ»Ð¾";cin >> n;
 	for (int i = 1; i <= n; i++)
 	{
 		
@@ -24,11 +24,11 @@ double f = 1;
 	cout << n << "!=" << f << endl;
 	#endif
 #ifdef STEPEN
-	double a;//÷èñëî, êîòîðîå âîçâîäèì
-	int n;//ñòåïåíü
+	double a;//Ñ‡Ð¸ÑÐ»Ð¾, ÐºÐ¾Ñ‚Ð¾Ñ€Ð¾Ðµ Ð²Ð¾Ð·Ð²Ð¾Ð´Ð¸Ð¼
+	int n;//ÑÑ‚ÐµÐ¿ÐµÐ½ÑŒ
 	double N=1;
-	cout << "Ââåäèòå ÷èñëî: ";cin >> a;
-	cout << "Ââåäèòå ñåòåïåíü:";cin >> n;
+	cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ñ‡Ð¸ÑÐ»Ð¾: ";cin >> a;
+	cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ ÑÐµÑ‚ÐµÐ¿ÐµÐ½ÑŒ:";cin >> n;
 		if (n < 0)
 		{
 			a = 1 / a;
@@ -41,7 +41,7 @@ double f = 1;
 	cout << N << endl;
 	#endif
 	#ifdef ASCI
-	cout << "Òàáëèöà ASCI";
+	cout << "Ð¢Ð°Ð±Ð»Ð¸Ñ†Ð° ASCI";
 	setlocale(LC_ALL, "C");
 	for (int i = 0;i < 256;i++)
 	{
@@ -54,7 +54,7 @@ double f = 1;
 	#endif
 #ifdef FIBANACHI
 	int n;
-	cout << "Ââåäèòå ïðåäåëüíîå çíà÷åíèå: ";cin >> n;
+	cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð¿Ñ€ÐµÐ´ÐµÐ»ÑŒÐ½Ð¾Ðµ Ð·Ð½Ð°Ñ‡ÐµÐ½Ð¸Ðµ: ";cin >> n;
 	for (int a = 0, b = 1, c = a + b; a < n;a = b, b = c, c = a + b)
 	{
 		cout << a << "\t";
@@ -63,7 +63,7 @@ double f = 1;
 
 	#ifdef SIMPLE_NUMBERS
 		int n;
-	cout << "Ââåäèòå ïðåäåëüíîå ÷èñëî";cin >> n;
+	cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð¿Ñ€ÐµÐ´ÐµÐ»ÑŒÐ½Ð¾Ðµ Ñ‡Ð¸ÑÐ»Ð¾";cin >> n;
 	for (int i = 2;i < n;i++)
 	{
 		bool simple = true;
